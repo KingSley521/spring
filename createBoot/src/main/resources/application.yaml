@@ -1,0 +1,27 @@
+# \u5E94\u7528\u540D\u79F0
+spring:
+  application:
+    name: createBoot
+# jdbc
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/fly?useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true&rewriteBatchedStatements=true&useSSL=false&serverTimezone=GMT%2B8
+    username: root
+    password: Luminary521@@
+# flyway
+  flyway:
+    enabled: true
+    clean-disabled: true
+    baseline-on-migrate: true
+    baseline-version: 1
+    locations: db/migration
+    out-of-order: true
+
+# \u5E94\u7528\u670D\u52A1 WEB \u8BBF\u95EE\u7AEF\u53E3
+server:
+  port: 8080
+
+
+
+
+
+
